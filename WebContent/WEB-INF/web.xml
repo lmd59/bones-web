@@ -4,7 +4,6 @@
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>
-	       classpath:applicationContext-business.xml
 	       /WEB-INF/applicationContext-security.xml
 	   </param-value>
   </context-param>
@@ -26,7 +25,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>main</servlet-name>
-    <url-pattern>*.html</url-pattern>
+    <url-pattern>/</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

@@ -30,6 +30,7 @@ CREATE TABLE `users` (
   `userID` int(10) unsigned zerofill NOT NULL auto_increment,
   `userName` varchar(20) NOT NULL default '',
   `userPassword` varchar(20) NOT NULL default '',
+  `enabled` tinyint(1) NOT NULL default 0,
   PRIMARY KEY  (`userID`)
 ) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
@@ -38,11 +39,11 @@ CREATE TABLE `users` (
 --
 
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` (`userID`,`userName`,`userPassword`) VALUES 
- (0000000001,'alex','aardvark'),
- (0000000002,'becca','bear'),
- (0000000003,'chris','cat'),
- (0000000004,'david','dog');
+INSERT INTO `users` (`userID`,`userName`,`userPassword`, `enabled`) VALUES 
+ (0000000001,'alex','aardvark',1),
+ (0000000002,'becca','bear',1),
+ (0000000003,'chris','cat',1),
+ (0000000004,'david','dog',1);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 --

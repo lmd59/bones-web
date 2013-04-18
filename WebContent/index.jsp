@@ -28,15 +28,15 @@ Your principal object is....: <%= request.getUserPrincipal() %>
 You can currently access "/secure" URLs.
 </p>
 </sec:authorize>
-<sec:authorize url='/secure/extreme/index.jsp'>
+<sec:authorize url='/secure/admin/index.jsp'>
 <p>
-You can currently access "/secure/extreme" URLs.
+You can currently access "/secure/admin" URLs.
 </p>
 </sec:authorize>
 
 <p>
 <a href="secure/index.jsp">Secure page</a></p>
-<p><a href="secure/extreme/index.jsp">Extremely secure page</a></p>
+<p><a href="secure/admin/index.jsp">Extremely secure page</a></p>
 </div>
 </body>
 </html>
